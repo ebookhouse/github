@@ -55,7 +55,7 @@
             return k + '=' + v;
           }).join('&');
         }
-        return url + '&' + (new Date()).getTime();
+        return url; // + '&' + (new Date()).getTime();
       }
 
       var xhr = new XMLHttpRequest();
